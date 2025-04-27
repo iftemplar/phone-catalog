@@ -1,0 +1,236 @@
+/* app/phones/[id]/PhoneDetail.module.css */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px 36px 140px 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  @media screen and (max-width: 480px) {
+    padding: 2rem;
+  }
+}
+
+.mainContent {
+  display: flex;
+  gap: 64px;
+  align-items: flex-start;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+
+.imageWrapper {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  padding: 32px;
+  max-width: 500px;
+  @media screen and (max-width: 900px) {
+    padding: 0;
+  }
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.brand {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #6b6b6b;
+}
+
+.model {
+  font-size: 24px;
+  font-weight: 300;
+  color: #000;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.price {
+  font-size: 20px;
+  font-weight: 300;
+  color: #000;
+}
+
+.label {
+  font-size: 14px;
+  font-weight: 300;
+  color: #6b6b6b;
+  text-transform: uppercase;
+  margin-top: 16px;
+}
+
+.options {
+  display: flex;
+  gap: 12px;
+  font-size: 14px;
+  color: #333;
+}
+
+.colorSelector {
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.colorOption {
+  width: 24px;
+  height: 24px;
+  border: 1px solid #fff;
+  outline: 1px solid #ccc;
+  background-color: transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  transition: outline 0.5s ease;
+  box-sizing: border-box;
+}
+
+.colorOption:hover {
+  outline-color: #000;
+}
+
+.addToCart {
+  margin-top: 40px;
+  background-color: #f0f0f0;
+  color: rgba(194, 191, 188, 1);
+  border: none;
+  padding: 15px 30px;
+  cursor: not-allowed;
+  text-align: center;
+  width: 380px;
+  text-transform: uppercase;
+  @media screen and (max-width: 380px) {
+    width: 100%;
+  }
+}
+
+.addToCart.readyToAdd {
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+.addToCart:hover {
+  background-color: #333;
+}
+
+.storageSelector {
+  display: flex;
+  gap: 0;
+  margin-top: 8px;
+}
+
+.storageOption {
+  border: 0.5px solid #ccc;
+  background-color: transparent;
+  cursor: pointer;
+  text-align: center;
+  padding: 24px;
+  font-size: 12px;
+  font-weight: 300;
+  width: 100px;
+  transition: border 0.5s ease;
+}
+
+.storageOption.selected {
+  border-color: #000;
+}
+
+.specsSection {
+  margin-top: 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.specsTitle {
+  font-size: 20px;
+  font-weight: 300;
+  color: #000;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.specsTable {
+  display: flex;
+  flex-direction: column;
+}
+
+.specsRow {
+  display: flex;
+  justify-content: flex-start;
+  padding: 16px 0;
+  border-bottom: 0.5px solid #000;
+  font-size: 14px;
+  font-weight: 300;
+
+  &:first-child {
+    border-top: 0.5px solid #000;
+  }
+}
+
+.specsLabel {
+  text-transform: uppercase;
+  color: #000;
+  min-width: 400px;
+  @media screen and (max-width: 900px) {
+    min-width: 200px;
+  }
+  @media screen and (max-width: 520px) {
+    min-width: 150px;
+  }
+}
+
+.specsDesc {
+  text-align: left;
+}
+
+.backLink {
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.backLinkContainer {
+  padding: 0 2rem 3rem 6.3rem;
+  @media screen and (max-width: 900px) {
+    padding: 2rem;
+  }
+}
+
+.similarSection {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.similarTitle {
+  font-size: 20px;
+  font-weight: 300;
+  color: #000;
+  margin-bottom: 8px;
+}
+
+.similarGrid {
+  display: flex;
+  flex-wrap: wrap;
+}

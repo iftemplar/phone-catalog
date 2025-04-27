@@ -1,0 +1,35 @@
+.header {
+  height: 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  gap: 3rem;
+  padding: 2rem 6.2rem;
+  margin-bottom: 20px;
+  @media screen and (max-width: 900px) {
+    padding: 2rem;
+  }
+}
+
+.logo {
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  color: #000;
+}
+
+.cart {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: #000;
+}
+
+.count {
+  font-size: 16px;
+  font-family: Helvetica, Arial, sans-serif;
+}
