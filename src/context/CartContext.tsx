@@ -1,23 +1,6 @@
 "use client";
 import { createContext, useContext, useEffect, useState } from "react";
-
-type CartItem = {
-  id: string;
-  name: string;
-  price: number;
-  imageUrl: string;
-  storage?: string;
-  color?: string;
-  quantity: number;
-};
-
-type CartContextType = {
-  items: CartItem[];
-  addToCart: (item: Omit<CartItem, "quantity">) => void;
-  incrementQuantity: (id: string) => void;
-  decrementQuantity: (id: string) => void;
-  removeFromCart: (id: string) => void;
-};
+import { CartItem, CartContextType } from "@/types/phone";
 
 const CartContext = createContext<CartContextType | undefined>(undefined);
 

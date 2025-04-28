@@ -1,15 +1,10 @@
 import styles from "./PhoneCard.module.css";
 import Link from "next/link";
 import Image from "next/image";
+import { Phone } from "@/types/phone";
 
 type Props = {
-  phone: {
-    id: string;
-    brand: string;
-    name: string;
-    basePrice: number;
-    imageUrl: string;
-  };
+  phone: Phone;
 };
 
 export default function PhoneCard({ phone }: Props) {
