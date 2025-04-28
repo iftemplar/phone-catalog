@@ -38,7 +38,6 @@ export default function PhoneDetailClient({ phone, similarPhones }: Props) {
       name: `${phone.name} (${selectedStorage.capacity}, ${selectedColor.name})`,
       imageUrl: selectedColor.imageUrl,
       price: selectedStorage.price,
-      quantity: 1,
     });
   };
 
