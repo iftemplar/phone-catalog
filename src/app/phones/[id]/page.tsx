@@ -2,7 +2,13 @@ import { fetchPhoneById, fetchPhones } from "@/lib/api";
 import PhoneDetailClient from "../../../components/PhoneDetail/PhoneDetailClient";
 import { Phone } from "@/types/phone";
 
-export default async function PhoneDetailPage({ params }: any) {
+type PageProps = {
+  params: {
+    id: string;
+  };
+};
+
+export default async function PhoneDetailPage({ params }: PageProps) {
   const phone = await fetchPhoneById(params.id);
   const allPhones = await fetchPhones();
 
